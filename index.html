@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops LvL1</title>
+  </head>
+  <body>
+    <div>
+      <input type="number" name="words" id="wordcount" />
+      <input type="button" value="word print" onclick="printWords()" />
+      <p id="outputWords"></p>
+    </div>
+    <div>
+      <input type="number" name="zahl" id="eingabe" />
+      <input type="button" value="Loop me" onclick="loop()" />
+      <p id="loopOutput"></p>
+    </div>
+    <div>
+      <h2>LvL3_2</h2>
+      <p id="division"></p>
+    </div>
+    <main>
+      <h1>Gib mir eine Zahl</h1>
+      <p>Ich werde ALLE Zahlen bis zu dieser Zahl addieren,</p>
+      <p>wenn sie durch die ausgewählten Zahlen teilbar sind!</p>
+      <form action="" onsubmit="return false">
+        <div>
+          <label for="inputZahl">Maximale Zahl</label>
+          <input type="number" name="inputZahl" id="inputZahl" />
+        </div>
+        <div>
+          <label for="ersteZahl">Erste Zahl</label>
+          <select name="ersteZahl" id="ersteZahl">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+        <div>
+          <label for="zweiteZahl">Zweite Zahl</label>
+          <select name="zweiteZahl" id="zweiteZahl">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
+        <input type="button" value="Count Me" onclick="check()" />
+        <p id="checkAusgabe"></p>
+      </form>
+    </main>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
